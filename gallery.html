@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Spoon</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src = "js/script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to Main Content</a>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="forbidden" onmouseover = "navUpdate(this)" onmouseout = "navUndo(this)">Home</a></li>
+                    <li><a href="gallery.html">Spoon Gallery</a></li>
+                    <li><a class="forbidden" onmouseover = "navUpdate(this)" onmouseout = "navUndo(this)">Shovel and Spoon</a></li>
+                </ul>
+            </nav>
+            <h1>Spoon Gallery</h1>
+        </header>
+
+        <main id="main-content">
+            <div id="viewBox">
+                <div id="image">
+		        Hover over an image below to display here.
+	            </div>
+                <div id="description">?</div>
+            </div>
+
+            <div class="gallery">
+                <div class="picture">
+                    <img class="preview" src="images/metal_spoon.jpg" alt="Metal Spoon" onmouseover = "upDate(this)" onmouseout = "unDo()">
+                </div>
+
+                <div class="picture">
+                    <img class="preview" src="images/plastic_spoon.jpg" alt="Plastic Spoon" onmouseover = "upDate(this)" onmouseout = "unDo()">
+                </div>
+
+                <div class="picture">
+                    <img class="preview" src="images/golden_spoon.jpg" alt="Golden Spoon" onmouseover = "upDate(this)" onmouseout = "unDo()">
+                </div>
+
+                <div class="picture">
+                    <img class="preview" src="images/wooden_spoon.jpg" alt="Wooden Spoon" onmouseover = "upDate(this)" onmouseout = "unDo()">
+                </div>
+
+                <div class="picture">
+                    <img class="preview" src="images/porcelain_spoon.jpg" alt="Porcelain Spoon" onmouseover = "upDate(this)" onmouseout = "unDo()">
+                </div>
+
+                <div class="picture">
+                    <img class="preview" src="images/bamboo_spoon.jpg" alt="Bamboo Spoon" onmouseover = "upDate(this)" onmouseout = "unDo()">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
