@@ -29,3 +29,28 @@ function navUndo(link) {
     link.style.backgroundPosition = '';
     link.style.color = '';
 }
+
+function addTabFocus() {
+    const images = document.querySelectorAll('img.preview');
+
+    for (let i = 0; i < images.length; i++) {
+        const img = images[i];
+        
+        img.setAttribute('tabindex', '0');
+
+        img.addEventListener('focus', function() {
+            console.log('Image focused:', img);
+            upDate(img);
+        });
+
+        img.addEventListener('blur', function() {
+            console.log('Image blur:', img);
+            unDo();
+        });
+    }
+}
+
+window.addEventListener('load', function() {
+    addTabFocus();
+    console.log('onload → addTabFocus triggered');
+});
